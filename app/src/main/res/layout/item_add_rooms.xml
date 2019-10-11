@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+    <TextView
+        android:id="@+id/tv_hotel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textColor="#333"
+        android:text="房间名称：" />
+    <EditText
+        android:id="@+id/et_room_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/iv_reduce"
+        android:layout_toRightOf="@+id/tv_hotel_name"
+        android:background="#00000000"
+        android:hint="请输入房间名称"
+        android:inputType="text"
+        android:maxLength="15"
+        android:textCursorDrawable="@null"
+        android:textSize="14sp" />
+
+
+
+    <ImageView
+        android:id="@+id/iv_reduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/iv_add"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/ic_reduce"/>
+
+
+   <ImageView
+       android:id="@+id/iv_add"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+       android:layout_centerVertical="true"
+       android:layout_marginRight="15dp"
+       android:src="@mipmap/ic_plus"/>
+
+
+    <View
+        android:background="#b9b9b9"
+        android:layout_height="0.75dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
